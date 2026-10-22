@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elemental Gym - Acceso</title>
+  <link rel="stylesheet" href="../css/iniciosesion.css">
+</head>
+<body>
+
+  <!-- Header principal -->
+  <header>
+    <div class="logo">
+      <h2 class="logo-texto">ELEMENTAL <span class="linea-verde">GYM</span></h2>
+    </div>
+    <div class="menu-icon" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Banner con fondo y tarjeta de acceso -->
+  <main class="banner">
+    <!-- Capa de oscurecimiento sobre la imagen de fondo -->
+    <div class="overlay"></div>
+
+    <div class="auth-container">
+      
+      <!-- Pestañas para cambiar entre Login y Registro -->
+      <div class="tabs">
+        <button type="button" class="tab-btn active" onclick="switchTab('login')">INICIAR SESIÓN</button>
+        <button type="button" class="tab-btn" onclick="switchTab('register')">REGISTRARSE</button>
+      </div>
+
+      <!-- Formulario de Inicio de Sesión -->
+      <form id="form-login" class="form-content active">
+        <div class="header-form">
+          <p class="subtitulo">RUTINAS CON OBJETIVO Y PROGRESIÓN</p>
+          <h2 class="linea-blanca-sm">INICIA <span class="linea-verde-sm">SESIÓN</span></h2>
+        </div>
+
+        <div class="campo">
+          <label for="login-email">CORREO ELECTRÓNICO</label>
+          <input type="email" id="login-email" placeholder="ejemplo@gym.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="login-password">CONTRASEÑA</label>
+          <input type="password" id="login-password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn-submit">ENTRAR</button>
+      </form>
+
+      <!-- Formulario de Registro -->
+      <form id="form-register" class="form-content">
+        <div class="header-form">
+          <p class="subtitulo">ÚNETE A ELEMENTAL GYM</p>
+          <h2 class="linea-blanca-sm">CREAR <span class="linea-verde-sm">CUENTA</span></h2>
+        </div>
+
+        <div class="campo">
+          <label for="reg-nombre">NOMBRE COMPLETO</label>
+          <input type="text" id="reg-nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="reg-email">CORREO ELECTRÓNICO</label>
+          <input type="email" id="reg-email" placeholder="ejemplo@gym.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="reg-password">CONTRASEÑA</label>
+          <input type="password" id="reg-password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn-submit">CREAR CUENTA</button>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Script sencillo para alternar entre Login y Registro -->
+  <script>
+    function switchTab(tab) {
+      const formLogin = document.getElementById('form-login');
+      const formRegister = document.getElementById('form-register');
+      const btns = document.querySelectorAll('.tab-btn');
+
+      if (tab === 'login') {
+        formLogin.classList.add('active');
+        formRegister.classList.remove('active');
+        btns[0].classList.add('active');
+        btns[1].classList.remove('active');
+      } else {
+        formRegister.classList.add('active');
+        formLogin.classList.remove('active');
+        btns[1].classList.add('active');
+        btns[0].classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
