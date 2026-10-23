@@ -11,13 +11,33 @@
     
     <img src="../img/logo.jpg" alt="Logo Elemental Gym" class="logo">
 
-    //barra de menu al poner span cada uno son lineas
+    <!-- barra de menu al poner span cada uno son lineas -->
 
-    <div class="menu-icon">
+    <div class="menu-icon" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
+    <!-- Script para abrir/cerrar menú -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+  </script> 
+
+    
+ <!-- Opciones del menú -->
+    <nav id="menu" class="menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#rutinas">Rutinas</a></li>
+        <li><a href="#categorias">Categorías</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
   </header>
     <div class="banner">
     <img src="../img/fon-gym.jpg" alt="tipo fondo para rellenar" class="fondos">
@@ -30,17 +50,14 @@
   </div>
    <div class="pasos-texto">
         <div class="contenedor-apartados">
-            <a href="../html/Paginas/objetivos.html" class="enlace-apartado">
-                01 ELIGE TU<br>OBJETIVO
-            </a>
-            <a href="../html/Paginas/rutina.html" class="enlace-apartado">
-                02 SIGUE TU<br>RUTINA
-            </a>
-            <a href="../html/Paginas/progreso.html" class="enlace-apartado">
-                03 MIDE TU<br>PROGRESO
-            </a>
-        </div>
+    <a href="../html/Paginas/objetivos.html" class="enlace-apartado">01 ELIGE TU<br>OBJETIVO</a>
+    <a href="../html/Paginas/rutina.html" class="enlace-apartado">02 SIGUE TU<br>RUTINA</a>
+    <a href="../html/Paginas/progreso.html" class="enlace-apartado">03 MIDE TU<br>PROGRESO</a>
+    <a href="hombres.html" class="enlace-apartado">RUTINAS<br>HOMBRES</a>
+    <a href="mujeres.html" class="enlace-apartado">RUTINAS<br>MUJERES</a>
 </div>
+</div>
+
 
 </body>
 </html>

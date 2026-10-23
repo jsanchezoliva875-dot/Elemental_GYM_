@@ -1,4 +1,3 @@
-
 header {
   display: flex;
   justify-content: space-between; /* logo a la izquierda, menú a la derecha */
@@ -236,8 +235,6 @@ header {
     background-color: white;
     color: black;
 }
-
-
 
 
 
