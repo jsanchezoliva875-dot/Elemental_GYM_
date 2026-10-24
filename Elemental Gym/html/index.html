@@ -48,6 +48,16 @@
     }
   });
 </script>
+
+<script>
+  function abrirTerminos() {
+    document.getElementById('modalTerminos').style.display = 'flex';
+  }
+
+  function cerrarTerminos() {
+    document.getElementById('modalTerminos').style.display = 'none';
+  }
+</script>
 </head>
 <body>
   <header>
@@ -60,6 +70,7 @@
       <span></span>
       <span></span>
     </div>
+
     
 <nav id="menu" class="menu">
   <ul>
@@ -80,14 +91,12 @@
 </nav>
   </header>
 
-  <!-- Script para abrir/cerrar menú -->
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
-    }
-  </script> 
+  <!-- Leyenda centrada entre el header y el banner, sin rebasar la mitad de la pantalla -->
+  <div class="leyenda-central">
+    <p>Tu plataforma definitiva para transformar tu físico</p>
+  </div>
 
+  
   <div class="banner">
     <img src="../img/fon-gym.jpg" alt="tipo fondo para rellenar" class="fondos">
 
@@ -104,8 +113,22 @@
       </div>
     </div>
   </div>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>&reg; 2026 Elemental Gym. Todos los derechos reservados.</p>
+    <p>
+      <a href="javascript:void(0);" onclick="abrirTerminos()">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+  <!-- Ventana flotante (Modal) de Términos y Condiciones -->
+  <div id="modalTerminos" class="modal-overlay">
+    <div class="modal-contenido">
+      <h2>Términos y Condiciones</h2>
+      <p>Bienvenido a Elemental Gym. Al utilizar este sitio web, aceptas cumplir con nuestros términos de uso, políticas de entrenamiento, responsabilidades sobre el uso de las rutinas y las normativas de seguridad de nuestras instalaciones virtuales y presenciales.</p>
+      <button onclick="cerrarTerminos()" class="btn-cerrar">Cerrar</button>
+    </div>
+  </div>
 </body>
-<footer>
-  
-</footer>
 </html>

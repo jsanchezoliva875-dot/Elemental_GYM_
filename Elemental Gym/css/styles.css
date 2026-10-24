@@ -307,3 +307,101 @@ html, body {
   overflow-x: hidden;
 }
 
+
+
+/* Estilos del pie de página */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid #222;
+  position: relative;
+  z-index: 10;
+}
+
+.site-footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #39FF14;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de la ventana modal (oculta por defecto) */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: #111;
+  border: 3px solid #00BFFF;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+}
+
+.modal-contenido h2 {
+  color: #39FF14;
+  margin-bottom: 15px;
+}
+
+.modal-contenido p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+/* Botón para cerrar la ventana */
+.btn-cerrar {
+  background-color: transparent;
+  border: 2px solid #39FF14;
+  color: #39FF14;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cerrar:hover {
+  background-color: #39FF14;
+  color: black;
+}
+
+.leyenda-central {
+  background-color: #000;
+  color: #8df0e7;
+  text-align: center;
+  padding: 12px 15px;
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px black;
+}
