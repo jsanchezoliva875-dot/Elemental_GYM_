@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Header original de tu proyecto */
+/* Header original */
 header {
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ header {
   border-radius: 2px;
 }
 
-/* Estilos de Tipografía e Identidad */
+
 .subtitulo {
   font-size: 1.2rem;
   font-weight: normal;
@@ -80,8 +80,6 @@ header {
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  
-  /* Cambia esto para que salga de 'css' y busque en 'img': */
   background: url('../img/fon-gym.jpg') no-repeat center center/cover;
 
 }
@@ -96,22 +94,20 @@ header {
   z-index: 1;
 }
 
-/* Contenedor tipo paso (estilo .paso) */
+
 .auth-container {
   position: relative;
   z-index: 2;
   width: 100%;
   max-width: 480px;
   background-color: rgba(0, 0, 0, 0.85);
-
-  /* Estilos exactos de tus recuadros .paso */
   border: 7px solid #00BFFF;
   border-radius: 10px;
   padding: 30px 25px;
   text-shadow: 2px 2px 6px black;
 }
 
-/* Pestañas (Login / Registro) */
+/* inicio sesion */
 .tabs {
   display: flex;
   gap: 10px;
@@ -215,4 +211,34 @@ header {
   background-color: #39FF14;
   color: black;
   text-shadow: none;
+}
+
+
+.contenedor-volver-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.btn-volver-neon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    color: #00ff88; /* Verde neón */
+    border: 2px solid #0e5634;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.btn-volver-neon:hover {
+    background-color: #00ff88;
+    color: #050505; /* Texto oscuro al pasar el cursor */
+    box-shadow: 0 0 15px #00ff88, 0 0 30px rgba(0, 255, 136, 0.6);
+    transform: translateY(-2px);
 }

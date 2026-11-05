@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
   <title>Elemental Gym</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="/Elemental Gym/img/icono2.png"> 
 
   <script>
@@ -41,7 +41,7 @@
 
   document.addEventListener('gestureend', function(event) {
     event.preventDefault();
-  });
+  })
   document.addEventListener('keydown', function(event) {
     if (event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '=' || event.key === '0')) {
       event.preventDefault();
@@ -52,7 +52,7 @@
 <body>
   <header>
     
-    <img src="../img/logo.jpg" alt="Logo Elemental Gym" class="logo">
+    <img src="img/logo.jpg" alt="Logo Elemental Gym" class="logo">
 
     <!-- barra de menu al poner span cada uno son lineas -->
     <div class="menu-icon" onclick="toggleMenu()">
@@ -63,14 +63,14 @@
     
 <nav id="menu" class="menu">
   <ul>
-    <li><a href="inicio sesion.html">Inicio de sesión</a></li>
+    <li><a href="html/inicio sesion.html">Inicio de sesión</a></li>
     
-    <!-- Opción con submenú desplegable -->
+   
     <li class="has-submenu">
       <a href="javascript:void(0);" onclick="toggleSubmenu(event)">Rutinas ▾</a>
       <ul class="submenu">
-        <li><a href="hombres.html">Rutinas Hombres</a></li>
-        <li><a href="mujeres.html">Rutinas Mujeres</a></li>
+        <li><a href="html/hombres.html">Rutinas Hombres</a></li>
+        <li><a href="html/mujeres.html">Rutinas Mujeres</a></li>
       </ul>
     </li>
 
@@ -89,7 +89,7 @@
   </script> 
 
   <div class="banner">
-    <img src="../img/fon-gym.jpg" alt="tipo fondo para rellenar" class="fondos">
+    <img src="img/fon-gym.jpg" alt="tipo fondo para rellenar" class="fondos">
 
     <div class="texto-banner">
       <p class="subtitulo">	—	— RUTINAS CON OBJETIVO Y PROGRESIÓN</p>
@@ -98,14 +98,45 @@
     </div>
     <div class="pasos-texto">
       <div class="contenedor-apartados">
-        <a href="../html/Paginas/objetivos.html" class="enlace-apartado">01 ELIGE TU<br>OBJETIVO</a>
-        <a href="../html/Paginas/rutina.html" class="enlace-apartado">02 SIGUE TU<br>RUTINA</a>
-        <a href="../html/Paginas/progreso.html" class="enlace-apartado">03 MIDE TU<br>PROGRESO</a>
-      </div>
+        <a href="html/hombres.html" class="enlace-apartado">Rutina para hombres</a>
+        <a href="html/mujeres.html" class="enlace-apartado">Rutina para mujeres</a>
+       
     </div>
   </div>
 </body>
-<footer>
-  
+
+  <footer class="footer-elemental">
+    <div class="contenedor-footer">
+        <!-- Columna 1-->
+        <div class="columna-footer branding">
+            <h3 class="logo-footer">ELEMENTAL <span>GYM</span></h3>
+            <p class="slogan-footer">Forja tu mejor versión con la mejor guía y rutinas de entrenamiento.</p>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="columna-footer enlaces">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/hombres.html">Rutinas Hombres</a></li>
+                <li><a href="html/mujeres.html">Rutinas Mujeres</a></li>
+                <li><a href="html/inicio sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="columna-footer redes">
+            <h4>Síguenos</h4>
+            <div class="iconos-redes">
+                <h3>@Elemental_GYM</h3>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="copyright-footer">
+        <p>&copy; 2026 Elemental Gym. Todos los derechos reservados.</p>
+    </div>
+
 </footer>
 </html>

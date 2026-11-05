@@ -1,6 +1,6 @@
 header {
   display: flex;
-  justify-content: space-between; /* logo a la izquierda, menú a la derecha */
+  justify-content: space-between;
   align-items: center;
   background-color: #000;
   padding: 10px 20px;
@@ -11,7 +11,7 @@ header {
 }
 
 .menu-icon {
-  width: 35px;/*tamaño del menu */
+  width: 35px;
   cursor: pointer;
 }
 
@@ -19,20 +19,20 @@ header {
   display: block;
   height: 4px;
   background: white;
-  margin: 6px 0; /*margen de espacio de cada linea del menu (3lineas*/
+  margin: 6px 0;
   border-radius: 2px;
 }
 .fondos {
   display: block;
   width: 100%;
-  height: 100vh;/* ocupa toda la altura visible */
+  height: 100vh;
   
 }
 
 .texto-banner {
   position: absolute;
-  top: 50%;                /* centrado vertical */
-  left: 5%;                /* alineado a la izquierda */
+  top: 50%;               
+  left: 5%;               
   transform: translateY(-50%);
   font-family:Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px 6px black;
@@ -61,9 +61,9 @@ header {
 }
 
 .banner {
-  position: relative;   /*  para que los recuadros se posicionen dentro */
+  position: relative;   
   width: 100%;
-  height: 100vh;        /* espacio de mi imagen para igualar los tamaños  */
+  height: 100vh;       
 }
 
 .pasos-texto {
@@ -86,16 +86,15 @@ header {
   flex: 1;
   text-align: center;
 
-  /*mas grande  */
+ 
   font-size: 2.5rem;         
   padding: 25px 30px;       
 
-  border: 7px solid #00BFFF; /* borde más grueso */
+  border: 7px solid #00BFFF;
   border-radius: 10px;
-  margin: 0 15px;            /* más espacio entre cuadros */
-}
+  margin: 0 15px;           
 
-/* Contenedor para alinear los 3 recuadros en fila */
+}
 .contenedor-apartados {
     display: flex;
     justify-content: space-between;
@@ -107,37 +106,32 @@ header {
 
 
 .enlace-apartado {
-    flex: 1; /* Permite que los tres recuadros tengan exactamente el mismo ancho */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     
     /* Diseño de bordes y fondo */
-    border: 3px solid #8df0e7; /* Borde color cian/celeste */
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo ligeramente oscuro para resaltar el texto */
+    border: 3px solid #8df0e7;
+    background-color: rgba(0, 0, 0, 0.2); 
     padding: 20px 10px;
-    
-    /* Tipografía */
-    color: #f4f4f0; /* Texto claro tirando a blanco roto */
+    color: #f4f4f0;
     text-align: center;
     text-decoration: none;
     font-family: 'Arial', sans-serif;
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.2;
-    
-    /* Efecto de transición para interactividad */
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-/* Efecto visual al pasar el cursor sobre los botones */
+
 .enlace-apartado:hover {
-    background-color: rgba(141, 240, 231, 0.15); /* Iluminación interna cian */
-    box-shadow: 0 0 15px rgba(141, 240, 231, 0.4); /* Resplandor exterior */
-    transform: translateY(-5px); /* Ligera elevación hacia arriba */
+    background-color: rgba(141, 240, 231, 0.15);
+    box-shadow: 0 0 15px rgba(141, 240, 231, 0.4); 
+    transform: translateY(-5px); 
 }
-/* --- ESTILOS PARA LA PÁGINA DE RUTINAS --- */
 
 .fondo-rutina {
     background-image: url('../img/fon-gym.jpg');
@@ -156,7 +150,7 @@ header {
 }
 
 .titulo-verde {
-    color: #7ED957; /* Verde brillante similar a la palabra "PLAN" de tu inicio */
+    color: #7ED957;
     font-size: 3rem;
     margin-bottom: 40px;
 }
@@ -165,20 +159,20 @@ header {
     color: #ffffff;
 }
 
-/* Cuadrícula para las tarjetas de los días */
+
 .grid-rutinas {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    flex-wrap: wrap; /* Permite que pasen a la siguiente línea en pantallas pequeñas */
+    flex-wrap: wrap; 
     margin-bottom: 50px;
 }
 
 .tarjeta-rutina {
     flex: 1;
     min-width: 300px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
-    border: 2px solid #8df0e7; /* Borde cian que usamos en los botones */
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #8df0e7;
     padding: 25px;
     color: white;
     text-align: left;
@@ -268,7 +262,7 @@ header {
   color: #39FF14;
 }
 
-/* Estilos para el submenú desplegable */
+
 .menu .has-submenu {
   position: relative;
 }
@@ -276,8 +270,8 @@ header {
 .menu .submenu {
   display: none;
   list-style: none;
-  padding-left: 20px; /* Sangría para diferenciar que son subopciones */
-  background-color: #111; /* Un tono ligeramente diferente para distinguirlo */
+  padding-left: 20px;
+  background-color: #111;
 }
 
 .menu .submenu.activo {
@@ -307,3 +301,114 @@ html, body {
   overflow-x: hidden;
 }
 
+/*pie de pagina*/
+.footer-elemental {
+    background-color: #080808;
+    border-top: 2px solid #00ff88;
+    box-shadow: 0 -5px 20px rgba(0, 255, 136, 0.15);
+    color: #e0e0e0;
+    padding: 40px 20px 20px 20px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.columna-footer {
+    flex: 1 1 250px;
+}
+
+
+.logo-footer {
+    font-size: 1.6rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.logo-footer span {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.slogan-footer {
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.5;
+}
+
+
+.columna-footer h4 {
+    color: #00ff88;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.columna-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna-footer ul li {
+    margin-bottom: 8px;
+}
+
+.columna-footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.columna-footer ul li a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 8px #00ff88;
+    padding-left: 5px;
+}
+
+/* Redes Sociales */
+.iconos-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.icono-social {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #00ff88;
+    border-radius: 50%;
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 1.1rem;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.2);
+    transition: all 0.3s ease;
+}
+
+.icono-social:hover {
+    background-color: #00ff88;
+    color: #080808;
+    box-shadow: 0 0 15px #00ff88;
+    transform: translateY(-3px);
+}
+
+/* Copyright */
+.copyright-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+}
